@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Conversor de moedas</title>
-    <script src="./script.js"></script>
+    
 </head>
 
 <body>
@@ -25,25 +25,25 @@
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>£ Libra</option>
-                <option>€ Euro</option>
+            <select class="select-currency">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="libra">£ Libra</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
 
         <label>
             Valor
-            <input type="number" placeholder="R$ 10.000,00">
+            <input class="input-currency" placeholder="R$ 10.000,00">
         </label>
 
-        <button class="convert-button">Converter</button>
+        <button class="button-convert">Converter</button>
 
         <section>
             <div class="currency-box">
                 <img src="/assets/brasil 2.png" alt="Logo-moeda-a-converter" class="logo-converter">
                 <p class="currency">Real</p>
-                <pc class="currency-value">R$ 0,00</pc>
+                <pc class="currency-value-to-convert">R$ 0,00</pc>
             </div>
 
             <img src="/assets/Vector.png" alt="seta" class="arrow-img">
@@ -56,5 +56,6 @@
 
     </main>
 </body>
+    <script src="script.js" defer></script>
 
 </html>
