@@ -6,7 +6,6 @@ function convertValues (){
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") // Valor em Real
     const currencyValueConverted = document.querySelector(".currency-value") // outras moedas
     
-    console.log(currencySelect.value)
     const dolarToday = 4.97
     const libraToday = 6.28
     const euroToday = 5.37
@@ -34,16 +33,35 @@ function convertValues (){
 
     }
 
-
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR" ,{
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-    
-
 }
 
+function changeCurrency(){
+    const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".logo-convertido")
+    
+    if(currencySelect.value == "dolar"){
+        currencyName.innerHTML = "Dolar Americano"
+        currencyImage.src = "./assets/estados-unidos (1) 1.png"
+    }
+
+    if(currencySelect.value == "euro"){
+        currencyName.innerHTML = "Euro"
+        currencyImage.src = "./assets/Euro.png"
+    }
+
+    if(currencySelect.value == "libra"){
+        currencyName.innerHTML = "Libra"
+        currencyImage.src = "./assets/Libra.png"
+    }
+    convertValues()
+}
+
+currencySelect.addEventListener("change", changeCurrency )
 convertButton.addEventListener("click", convertValues )
 
 
