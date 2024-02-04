@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #8A51FC;
+    background-color: #0a0a0a;
     ;
 }
 
@@ -15,6 +15,7 @@ body {
     width: 300px;
     display: block;
     margin: 20px auto;
+    background-color: #0a0a0a;
 }
 
 main {
@@ -49,10 +50,10 @@ input {
 
 button {
     border-radius: 5px;
-    background: #772FD3;
+    background: #ffa726;
     width: 100%;
     height: 48px;
-    color: #FFF;
+    color: #0a0a0a;
     font-size: 18px;
     font-weight: 700;
     border: none;
@@ -70,8 +71,8 @@ button:active {
 
 section {
     border-radius: 20px;
-    background: #F4F4F4;
-    border: 1px solid #772FD3;
+    background: #fefefe;
+    border: 1px solid #ffa726;
     /* height: 276px;
     width: 100%; */
     padding: 12px;
@@ -83,6 +84,7 @@ section {
 
 .arrow-img {
     margin: 15px 0;
+    width: 30px;
 }
 
 .currency-box {
@@ -102,4 +104,10 @@ section {
     color: #555;
     font-size: 20px;
     font-weight: 700;
+}
+
+.logo-inicio{
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    color: #ffa726;
 }
